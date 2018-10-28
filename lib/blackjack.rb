@@ -24,9 +24,11 @@ def get_user_input
   gets.chomp
 end
 
-def end_game
+def end_game(card_total)
   # code #end_game here
-  "Sorry, you hit #{card_total}. Thanks for playing!"
+  if card_total > 21
+  return "Sorry, you hit #{card_total}. Thanks for playing!"
+  end
 end
 
 def initial_round
